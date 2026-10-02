@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.top {
+    background: #111;
+    color: white;
+    padding: 10px 0;
+    font-size: 13px;
+}
+
+.top .container {
+    display: flex;
+    align-items: center;
+}
+
+.top b,
+.yellow {
+    color: #f5a623;
+}
+
+.email {
+    margin-left: auto;
+}
+
+.icons {
+    display: flex;
+    gap: 5px;
+    margin-left: 20px;
+}
+
+.icons i {
+    padding: 11px 17px;
+    background: #333;
+    color: #f5a623;
+    border-radius: 5px;
+}
+
+header {
+    height: 75px;
+    background: #373837;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 75px;
+    width: 250px;
+    margin-left: -40px;
+    padding-left: 70px;
+    display: flex;
+    align-items: center;
+    background: #f5a623;
+    font-size: 24px;
+    font-weight: 800;
+    transform: skew(20deg);
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+    margin-right: 60px;
+}
+
+.nav a {
+    padding: 28px 5px;
+    font-size: 14px;
+}
+
+.nav .home {
+    padding: 28px 18px;
+    background: #f5a623;
+    transform: skewX(20deg);
+    color: black;
+    font-weight: 600;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(#0007, #0007), url("https://preview.colorlib.com/theme/buildream/images/bg_1.jpg") center/cover fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero p {
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.15;
+    margin: 10px 0 25px;
+}
+
+.hero span {
+    color: #f5a623;
+}
+
+button {
+    border: 0;
+    padding: 14px 22px;
+    background: #f5a623;
+    color: #373837;
+    cursor: pointer;
+}
+
+.hero button+button {
+    background: #373837;
+    color: white;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 100px 0;
+}
+
+.ab {
+    background-color: #f7f7f7;
+    font-size: 20px;
+}
+
+.ab>i {
+    font-size: 30px;
+    padding: 17px 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.about>div {
+    width: 50%;
+}
+
+.about img {
+    width: 100%;
+    height: 620px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.about h1 {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0 25px;
+}
+
+.text {
+    color: #888;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+.about h2 {
+    margin: 25px 0 15px;
+    font-weight: 500;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.cards>div {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.cards i {
+    padding: 15px;
+    background: #f5a623;
+    color: #333;
+}
+
+.cards h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cards p {
+    color: #888;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-top: 5px;
+}
+
+.third {
+    padding: 80px 5%;
+    text-align: center;
+    background: #f7f7f7;
+}
+
+.third h1,
+.services>h1,
+.projects>h1,
+.pricing>h1 {
+    font-size: 45px;
+    font-weight: 300;
+    margin: 10px 0 45px;
+}
+
+.companies {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.comp {
+    text-align: center;
+    color: #777;
+}
+
+.comp i {
+    font-size: 30px;
+    color: #f5a623;
+    margin-bottom: 8px;
+}
+
+.comp h3 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.services,
+.projects,
+.pricing {
+    padding: 100px 5%;
+}
+
+.services {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    padding: 35px;
+    text-align: left;
+    background: #f7f7f7;
+}
+
+.paint {
+    display: inline-flex;
+    padding: 12px 15px;
+    background: #f5a623;
+    color: #333;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #888;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.projects {
+    background: #f7f7f7;
+}
+
+
+.project {
+    position: relative;
+    height: 330px;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project h2 {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: white;
+    font-weight: 500;
+}
+
+.pricing {
+    text-align: center;
+}
+
+.price {
+    padding: 40px;
+    background: #f7f7f7;
+}
+
+.price h1 {
+    font-size: 50px;
+    font-weight: 400;
+    margin: 15px;
+}
+
+.price p {
+    color: #888;
+    padding: 8px;
+}
+
+.price button {
+    margin-top: 20px;
+}
+
+.price.active {
+    background: #373837;
+    color: white;
+}
+
+.story {
+    text-align: center;
+    padding: 100px 5%;
+    font-size: 20px;
+}
+
+.story>ul>li>i {
+    font-size: 22px;
+    color: #f5a623;
+    margin-bottom: 8px;
+}
+
+.story>ul>li {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial {
+    background: #f7f7f7;
+    padding: 100px 5%;
+}
+
+.testimonial h1 {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.yell {
+    color: #f5a623;
+}
+
+.testimonial p {
+    text-align: center;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.testimonials {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.testi {
+    padding: 30px;
+    background: white;
+}
+
+.testi img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+
+.form-section {
+    display: flex;
+    gap: 70px;
+    padding: 100px 10%;
+}
+
+.form-text {
+    width: 45%;
+}
+
+.form-text h1 {
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0 25px;
+}
+
+form {
+    width: 55%;
+    display: grid;
+    gap: 15px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-family: Poppins, sans-serif;
+}
+
+form textarea {
+    height: 150px;
+    resize: none;
+}
+
+form button {
+    width: 550px;
+    padding: 14px 22px;
+    border-radius: 10px;
+}
+
+footer {
+    padding: 70px 5% 30px;
+    background: #111;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    gap: 50px;
+}
+
+
+.footer h2 {
+    color: #f5a623;
+    margin-bottom: 15px;
+}
+
+.footer h3 {
+    margin-bottom: 15px;
+}
+
+.footer p {
+    color: #999;
+    font-size: 13px;
+    line-height: 2;
+}
